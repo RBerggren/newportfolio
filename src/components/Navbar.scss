@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+    &--container{
+       width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;;
+    }
+
+    &--links{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &--logo{
+        height: 3rem;
+    }
+    
+    &--list{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+    }
+
+    &--listItem{
+        cursor: pointer;
+    }
+
+    &--icons{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    &--icon{
+        width: 1.5rem;
+        cursor: pointer;
+    }
+}
