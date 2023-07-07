@@ -1,3 +1,4 @@
+import React from "react";
 import "./Navbar.scss";
 
 const rootClassName = "navbar";
@@ -7,7 +8,7 @@ const Navbar = () => {
     <div className={rootClassName}>
       <div className={`${rootClassName}--container`}>
         <div className={`${rootClassName}--links`}>
-          <img className={`${rootClassName}--logo`} src="../img/logo.png" />
+          <img className={`${rootClassName}--logo`} src="./img/logo.png" />
           <ul className={`${rootClassName}--list`}>
             <li className={`${rootClassName}--listItem`}>Home</li>
             <li className={`${rootClassName}--listItem`}>Works</li>

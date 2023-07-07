@@ -7,9 +7,9 @@
   overflow-y: auto;
   scrollbar-width: none;
   color: white;
-  background: url("../public/img/bg.jpeg");
+  background: url("../public/img/background.jpg");
 
-   &::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     display: none;
   }
 }

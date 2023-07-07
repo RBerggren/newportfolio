@@ -1,16 +1,17 @@
-import Hero from "./components/Hero";
-import Who from "./components/Who";
-import Works from "./components/Works";
-import Contact from "./components/Contact";
+import Hero from "./components/IntroOverview";
+import Who from "./components/BoxOverview";
+import ModelOverview from "./components/ModelOverview";
+import Contact from "./components/ContactOverview";
 
 import "./App.scss";
+import React from "react";
 
 function App() {
   return (
     <div className="app">
       <Hero />
       <Who />
-      <Works />
+      <ModelOverview />
       <Contact />
     </div>
   );

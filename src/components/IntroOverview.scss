@@ -1,4 +1,4 @@
-.hero {
+.intro-overview {
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -35,7 +35,7 @@
         flex: 1;
         align-items: center;
       }
-      background-color: blue;
+
       &--h1 {
         font-size: 74px;
 
@@ -81,8 +81,8 @@
       }
 
       &--img {
-        width: 800px;
-        height: 600px;
+        width: 400px;
+        height: 400px;
         object-fit: contain;
         position: absolute;
         top: 0;
