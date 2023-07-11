@@ -5,7 +5,7 @@ import React from "react";
 
 const rootClassName = "contact-overview";
 
-const Contact = () => {
+const ContactOverview = () => {
   const ref = useRef<HTMLFormElement>(null);
   const [sent, setSent] = useState(false);
 
@@ -55,4 +55,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactOverview;

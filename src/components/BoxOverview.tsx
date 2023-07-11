@@ -25,21 +25,6 @@ const BoxOverview = () => {
           <h1 className={`${rootClassName}--container--right--h1`}>
             Think outside the box
           </h1>
-          <div className={`${rootClassName}--container--right--info`}>
-            <img
-              className={`${rootClassName}--container--right--line`}
-              src="./img/line.png"
-            />
-            <h2 className={`${rootClassName}--container--right--h2`}>
-              Who we are
-            </h2>
-          </div>
-          <p className={`${rootClassName}--container--right--text`}>
-            Supercool developer from northern part of Sweden
-          </p>
-          <button className={`${rootClassName}--container--right--button`}>
-            See our works
-          </button>
         </div>
       </div>
     </div>

@@ -1,18 +1,18 @@
-import Hero from "./components/IntroOverview";
-import Who from "./components/BoxOverview";
+import IntroOverview from "./components/IntroOverview";
 import ModelOverview from "./components/ModelOverview";
-import Contact from "./components/ContactOverview";
+import ContactOverview from "./components/ContactOverview";
 
 import "./App.scss";
 import React from "react";
+import BoxOverview from "./components/BoxOverview";
 
 function App() {
   return (
     <div className="app">
-      <Hero />
-      <Who />
+      <IntroOverview />
+      <BoxOverview />
       <ModelOverview />
-      <Contact />
+      <ContactOverview />
     </div>
   );
 }

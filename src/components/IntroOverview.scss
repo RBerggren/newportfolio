@@ -37,38 +37,11 @@
       }
 
       &--h1 {
-        font-size: 74px;
+        font-size: 58px;
 
         @media only screen and (max-width: 768px) {
           text-align: center;
         }
-      }
-
-      &--info {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-
-      &--line {
-        height: 5px;
-      }
-
-      &--h2 {
-        color: #da4ea2;
-      }
-
-      &--text {
-        font-size: 24px;
-        color: lightgray;
-        @media only screen and (max-width: 768px) {
-          padding: 20px;
-          text-align: center;
-        }
-      }
-
-      &--button {
-        width: 8rem;
       }
     }
 

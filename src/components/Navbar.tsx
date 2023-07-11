@@ -17,10 +17,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className={`${rootClassName}--icons`}>
-          <img className={`${rootClassName}--icon`} src="./img/search.png" />
-          <button> Hire me now</button>
-        </div>
+        <button> Contact </button>
       </div>
     </div>
   );

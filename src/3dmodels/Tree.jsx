@@ -11,7 +11,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('../public/img/tree-transformed.glb')
+  const { nodes, materials } = useGLTF('/img/tree-transformed.glb')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Leaves001_Leavs_0.geometry} material={materials.Leavs} rotation={[-Math.PI / 2, 0, 0]} scale={100} />
@@ -20,4 +20,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('../public/img/tree-transformed.glb')
+useGLTF.preload('/img/tree-transformed.glb')
