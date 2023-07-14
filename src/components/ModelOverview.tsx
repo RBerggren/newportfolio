@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import "./ModelOverview.scss";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stage } from "@react-three/drei";
-import Tree from "../3dmodels/Tree";
+
+import ModelComponent, { ModelType } from "./ModelComponent";
 
 const rootClassName = "model-overview";
 
 const data = [
-  { title: "Show a tree", id: "tree" },
-  { title: "Show a rock", id: "rock" },
-  { title: "Show a house", id: "house" },
+  { title: "Show a tree", id: "tree" as ModelType },
+  { title: "Show a rock", id: "rock" as ModelType },
+  { title: "Show a shiba", id: "shiba" as ModelType },
 ];
 
 const ModelOverview = () => {
-  const [selectedModel, setSelectedModel] = useState("");
+  const [selectedModel, setSelectedModel] = useState<ModelType>("tree");
   console.log(selectedModel);
+
   return (
     <div className={rootClassName}>
       <div className={`${rootClassName}--container`}>
@@ -32,15 +32,7 @@ const ModelOverview = () => {
           ))}
         </div>
         <div className={`${rootClassName}--container--right`}>
-          {selectedModel === "tree" && (
-            <Canvas>
-              <Stage environment="city" intensity={0.6}>
-                <Tree />
-              </Stage>
-
-              <OrbitControls enableZoom={false} autoRotate />
-            </Canvas>
-          )}
+          <ModelComponent model={selectedModel} />
         </div>
       </div>
     </div>
